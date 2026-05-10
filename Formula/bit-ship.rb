@@ -12,13 +12,11 @@ class BitShip < Formula
   depends_on "podman"
 
   def install
-    libexec.install Dir["*"]
-    chmod 0755, libexec/"bin/bin.js"
-    chmod 0755, libexec/"bin/pod.js"
-    bin.install_symlink libexec/"bin/bin.js" => "bit-ship"
-    bin.install_symlink libexec/"bin/bin.js" => "bitship"
-    bin.install_symlink libexec/"bin/pod.js" => "bit-pod"
-    bin.install_symlink libexec/"bin/pod.js" => "bitpod"
+    system "#{Formula["node@24"].opt_bin}/npm", "install", "-g", "--prefix", prefix, "bit-ship"
+    bin.install_symlink "bit-ship" => "bit-ship"
+    bin.install_symlink "bitship" => "bitship"
+    bin.install_symlink "bit-pod" => "bit-pod"
+    bin.install_symlink "bitpod" => "bitpod"
   end
 
   test do
