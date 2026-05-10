@@ -3,9 +3,9 @@ class BitShip < Formula
   homepage "https://www.bit-ship.dev"
 
   url "https://registry.npmjs.org/bit-ship/-/bit-ship-0.5.0-1eb2838.tgz"
-  sha256 "0bac06268ad8b1be3de6bfc10db65ea798e3e4e761fcce5525e69b867f5ae701"
+  sha256 "cadd5b543d2fbf1ac76f86c324ff42d8141342aba3116d357331bd1554eadc99"
 
-  version "0.5.0-27c4463"
+  version "0.5.0-1eb2838"
   license "MIT"
 
   depends_on "node"
