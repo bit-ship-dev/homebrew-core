@@ -2,10 +2,10 @@ class BitShip < Formula
   desc "Bit-Ship CLI is tool that analyses your code and generates a custom environment for your needs\nYou can use if to local development, CI/CD or even production."
   homepage "https://www.bit-ship.dev"
 
-  url "https://registry.npmjs.org/bit-ship/-/bit-ship-0.5.0-0ed3303.tgz"
-  sha256 "c454cede824d293c5014bc1314e9ead25f4a75751901463ab6731ceec4b130d9"
+  url "https://registry.npmjs.org/bit-ship/-/bit-ship-1.0.0.tgz"
+  sha256 "60c61e21477c3af177a7ece57a4afeec3f56858f5b8fe185d7502ee5dc49ca88"
 
-  version "0.5.0-0ed3303"
+  version "1.0.0"
   license "MIT"
 
   depends_on "node@24"
